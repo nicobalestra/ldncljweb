@@ -9,6 +9,7 @@
                            ;; ClojureScript
                            [jayq "0.1.0-alpha2"]
                            [cheshire "4.0.0"]
+<<<<<<< HEAD
                            [clj-http "0.4.3"]
                            [clojail "1.0.3"]
                            [fetch "0.1.0-alpha2"]
@@ -24,3 +25,5 @@
                                       :optimizations :simple}}]}
 
             :main ldncljweb.server)
+=======
+>>>>>>> 69e7d07edafabb9e4549d79b2304de8744724852
