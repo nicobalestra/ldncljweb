@@ -23,6 +23,9 @@
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="stylesheet" href="css/ldncljweb.css">
+  <link rel="stylesheet" href="css/theme/blackboard.css">  
+  <link rel="stylesheet" href="css/codemirror.css">
+  
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
@@ -30,6 +33,8 @@
        Modernizr enables HTML5 elements & feature detects for optimal performance.
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
+
+
 </head>
 <body>
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
@@ -47,6 +52,7 @@
           <div class="title">The London Clojure Community </div>
           <div class="sub-title">Sign up to our <a href="https://groups.google.com/d/forum/london-clojurians">mailing list</a>
               or follow us on <a href="https://twitter.com/#!/ldnclj">Twitter</a>!
+            <a  href="#" id="try-link">Try Clojure</a>
           </div>
       </header>
 
@@ -99,6 +105,8 @@
               </div>
           </div>
 
+
+
           <div id="posts">
               <div class="post">
                   <h1>May 2012 Dojo Signup Available</h1>
@@ -116,11 +124,16 @@
                   </p>
               </div>
           </div>
+				 <div id="repl">
+         	<div id="repl-out-container">
+          	 <div id="repl-output"></div>
+         	</div>
 
-      </div>
-      <footer>
-
-      </footer>
+         	<div id="repl-help">"Ctrl+Enter/click on 'Evaluate' to submit an expression. Up/Down to navigate the history."</div>
+         	<div id="repl-in-container">
+	          <label for="repl-command"><textarea id="repl-command" name="repl-command"></textarea></label>
+         	</div>
+        </div>	
   </div>
 
 
@@ -165,8 +178,12 @@
   </script>
 
   <!-- scripts concatenated and minified via build script -->
+  <script src="js/lib/codemirror.js"></script>
+  <script src="js/jquery.lightbox_me.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/cljs.js"></script>
+
   <!-- end scripts -->
 
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.

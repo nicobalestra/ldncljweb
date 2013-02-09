@@ -74,12 +74,12 @@ header {
 }
 
 #posts p {
-	margin-top: 0;
-	margin-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
 }
 
 .post {
-	margin-bottom: 1.5em;
+        margin-bottom: 1.5em;
 }
 
 .address {
@@ -97,11 +97,11 @@ footer {
 }
 
 .date {
-	font-size: 0.7em;
-	color: grey;
-	font-style: italic;
-	text-align: right;
-	margin-right: 2em;
+        font-size: 0.7em;
+        color: grey;
+        font-style: italic;
+        text-align: right;
+        margin-right: 2em;
 }
 
 #dojo-logo {
@@ -120,4 +120,32 @@ footer {
     color: white;
     text-decoration: none;
     margin-right: 5px;
+}
+
+
+#repl {
+   -moz-border-radius: 6px;
+   background: #eef2f7;
+   -webkit-border-radius: 6px;
+   border: 1px solid #536376;
+   -webkit-box-shadow: rgba(0,0,0,.6) 0px 2px 12px;
+   -moz-box-shadow:  rgba(0,0,0,.6) 0px 2px 12px;;
+   padding: 14px 22px;
+   width: 600px;
+   position: relative;
+   display: none;
+}
+
+#repl-out-container {
+  width:550px;
+  height: 200px;
+}
+
+#repl-in-container{
+  width: 550px;
+  height:150px;
+}
+
+#repl-help {
+  height: 1.3em
 }
